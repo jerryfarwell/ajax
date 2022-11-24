@@ -1,0 +1,21 @@
+<br><br>
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+    <a href="<%= new_email_path %>"><button type="button" class="btn btn-secondary">recevoir un email</button></a>
+      <th scope="col"> liste des emails : </th>
+      <th scope="col">contenu de l'email :</th>
+      <ul id="email-list">
+    <% @email.each do  |email| %><br>
+    </tr>
+  </thead>
+  <tbody>
+      <th scope="row"><li><%= link_to email.object, email %></li></th>
+      <td colspan="2"><li><%= email.body  %></li></td>
+    </tr>
+    <% end %>
+    </ul>
+  </tbody>
+</table>
+
+

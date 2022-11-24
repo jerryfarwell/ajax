@@ -1,0 +1,12 @@
+<br><br>
+<div class="form">
+      <%= form_tag(emails_path, method: :post, class: "form", remote: true) do %>
+        <label for="object">object :
+        <%= text_field_tag  :object %><br><br>
+
+        <label for="body">body : 
+        <%= text_area_tag  :body %><br><br>
+
+        <%= submit_tag 'envoyer', :name => 'commit'%>
+      <% end %>
+</div>

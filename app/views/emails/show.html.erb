@@ -1,0 +1,18 @@
+<h1>Emails#show</h1>
+<p>Find me in app/views/emails/show.html.erb</p>
+
+
+<br><br>
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col"> Objet : </th>
+      <th scope="col">Contenu de l'email :</th>
+    </tr>
+  </thead>
+  <tbody>
+      <th scope="row"><%= @email.object%></th>
+      <td colspan="2"><%= @email.body  %></td>
+    </tr>
+  </tbody>
+</table>
